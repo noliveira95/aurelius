@@ -5,6 +5,16 @@ body {
   justify-content: center;
 }
 
+h1 {
+  margin: 10px 0 0 0;
+}
+
+h2 {
+  margin: 0 0 2rem 0;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
 .main,
 .quote-container {
   display: flex;
@@ -14,7 +24,12 @@ body {
 }
 
 .quote {
-  font-size: 16px;
+  font-size: 1.2rem;
+  margin: 10px;
+}
+
+.author {
+  font-size: 1rem;
 }
 
 .generate-quote {
@@ -24,7 +39,7 @@ body {
   background-color: #1B263B;
   border: none;
   border-radius: 10%;
-  margin: 20px 20px 20px 20px;
+  margin: 25px;
 }
 
 .generate-quote:hover {
