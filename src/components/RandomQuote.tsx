@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import axios from 'axios';
 
-const URL = "https://stoicquotesapi.com/v1/api/quotes/random";
+const URL = import.meta.env.VITE_API_URL;
 
 export default function RandomQuote() {
     const [quote, setQuote] = useState("Memento Mori");
