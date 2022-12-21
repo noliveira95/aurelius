@@ -1,15 +1,15 @@
 {
    "name": "Aurelius",
-   "description": "Stoic Quote Generator",
+   "description": "Generate random quotes from ancient Stoic philosophers.",
    "version": "1.0",
    "manifest_version": 3,
    "action": {
        "default_popup": "index.html",
-       "default_title": "Open the popup"
+       "default_title": "Aurelius"
    },
    "icons": {
-       "16": "vite.svg",
-       "48": "vite.svg",
-       "128": "vite.svg"
+       "16": "/icons8-marcus-aurelius-50.png",
+       "48": "/icons8-marcus-aurelius-50.png",
+       "128": "/icons8-marcus-aurelius-100.png"
    }
 }
