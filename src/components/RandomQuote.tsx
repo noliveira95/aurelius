@@ -1,7 +1,5 @@
 import useGetQuote from "../hooks/useGetQuote";
 
-const URL = import.meta.env.VITE_API_URL;
-
 export default function RandomQuote() {
   const { data, error, loading, getQuote } = useGetQuote();
 
