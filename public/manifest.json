@@ -11,9 +11,5 @@
     "16": "/images/icons8-marcus-aurelius-50.png",
     "48": "/images/icons8-marcus-aurelius-50.png",
     "128": "/images/icons8-marcus-aurelius-100.png"
-  },
-  "background": {
-    "service_worker": "src/scripts/background/background.js",
-    "persistent": false
   }
 }
