@@ -7,18 +7,15 @@ export default function RandomQuote() {
 
   if (error) return <div>Error: {error.message}</div>;
 
-  if (data) {
-    const { quote, author } = data;
-    return (
-      <div className="quote-container">
-        {loading ? <div>Loading...</div> : null}
-        {error ? <div>Error: {error.message}</div> : null}
-        <div className="quote">"{quote}"</div>
-        <div className="author">- {author}</div>
-        <button className="generate-quote" onClick={getQuote}>
-          New Quote
-        </button>
-      </div>
-    );
-  }
+  return (
+    <div className="quote-container">
+      {loading ? <div>Loading...</div> : null}
+      {error ? <div>Error: {error.message}</div> : null}
+      <div className="quote">"{data ? data.text : "Memento Mori"}"</div>
+      <div className="author">- {data ? data.author : "Marcus Aurelius"}</div>
+      <button className="generate-quote" onClick={getQuote}>
+        New Quote
+      </button>
+    </div>
+  );
 }

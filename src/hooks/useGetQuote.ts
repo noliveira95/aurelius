@@ -4,7 +4,7 @@ import axios, { AxiosResponse } from "axios";
 const URL: string = import.meta.env.VITE_API_URL;
 
 interface DataType {
-  quote: string;
+  text: string;
   author: string;
 }
 
@@ -15,7 +15,7 @@ const useGetQuote = (): {
   getQuote: () => Promise<void>;
 } => {
   const [data, setData] = useState<DataType | null>(null);
-  const [loading, setLoading] = useState<boolean>(true);
+  const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState(null);
 
   const getQuote = async () => {
