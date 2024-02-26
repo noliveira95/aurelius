@@ -8,9 +8,9 @@
     "default_title": "Aurelius"
   },
   "icons": {
-    "16": "/icons8-marcus-aurelius-50.png",
-    "48": "/icons8-marcus-aurelius-50.png",
-    "128": "/icons8-marcus-aurelius-100.png"
+    "16": "/images/icons8-marcus-aurelius-50.png",
+    "48": "/images/icons8-marcus-aurelius-50.png",
+    "128": "/images/icons8-marcus-aurelius-100.png"
   },
   "background": {
     "service_worker": "background.js",
