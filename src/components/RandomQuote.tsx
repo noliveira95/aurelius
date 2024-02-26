@@ -1,30 +1,26 @@
-import { useState } from 'react';
-import axios from 'axios';
+import useGetQuote from "../hooks/useGetQuote";
 
 const URL = import.meta.env.VITE_API_URL;
 
 export default function RandomQuote() {
-    const [quote, setQuote] = useState("Memento Mori");
-    const [author, setAuthor] = useState("");
+  const { data, error, loading, getQuote } = useGetQuote();
 
-    function getQuote() {
-      axios.get(URL).then((res) => {
-        setQuote(res.data.body);
-        setAuthor(res.data.author);
-      }).catch((err) => {
-        console.log(err);
-      })
-    }
+  if (loading) return <div>Loading...</div>;
 
+  if (error) return <div>Error: {error.message}</div>;
+
+  if (data) {
+    const { quote, author } = data;
     return (
-      <div className='quote-container'>
-        <div className='quote'>
-          "{quote}"
-        </div>
-        <div className='author'>
-          - {author}
-        </div>
-        <button className='generate-quote' onClick={getQuote}>New Quote</button>
+      <div className="quote-container">
+        {loading ? <div>Loading...</div> : null}
+        {error ? <div>Error: {error.message}</div> : null}
+        <div className="quote">"{quote}"</div>
+        <div className="author">- {author}</div>
+        <button className="generate-quote" onClick={getQuote}>
+          New Quote
+        </button>
       </div>
-    )
+    );
   }
+}
