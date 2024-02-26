@@ -1,15 +1,19 @@
 {
-   "name": "Aurelius",
-   "description": "Generate random quotes from ancient Stoic philosophers.",
-   "version": "1.0",
-   "manifest_version": 3,
-   "action": {
-       "default_popup": "index.html",
-       "default_title": "Aurelius"
-   },
-   "icons": {
-       "16": "/icons8-marcus-aurelius-50.png",
-       "48": "/icons8-marcus-aurelius-50.png",
-       "128": "/icons8-marcus-aurelius-100.png"
-   }
+  "name": "Aurelius",
+  "description": "Generate random quotes from ancient Stoic philosophers.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Aurelius"
+  },
+  "icons": {
+    "16": "/icons8-marcus-aurelius-50.png",
+    "48": "/icons8-marcus-aurelius-50.png",
+    "128": "/icons8-marcus-aurelius-100.png"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "persistent": false
+  }
 }
