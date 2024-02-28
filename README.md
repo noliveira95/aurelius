@@ -23,7 +23,7 @@ Aurelius is a Chrome extension that generates quotes from ancient Stoic philosop
 
 # Loading the Extension
 - Clone this repo
-- From the root dir and run `npm run build`
+- From the root dir run `npm run build`
 - Go to Chrome (or another Chrome-based browser) and go to the Extensions page
 - Turn on dev mode
 - Select "Load Unpacked" and select the `dist/` folder
